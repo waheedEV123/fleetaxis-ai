@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --fa-green: #00C16E;
+  --fa-green-dark: #009955;
+  --fa-green-deep: #006E3C;
+  --fa-navy: #0B1437;
+  --fa-navy-mid: #0F1E4A;
+  --fa-navy-light: #162258;
+  --fa-white: #FFFFFF;
+  --fa-gray-50: #F8FAFB;
+  --fa-gray-100: #F0F4F8;
+  --fa-gray-200: #E2E8F0;
+  --fa-gray-300: #CBD5E1;
+  --fa-gray-400: #94A3B8;
+  --fa-gray-500: #64748B;
+  --fa-gray-600: #475569;
+  --fa-gray-700: #334155;
+  --fa-gray-800: #1E293B;
+  --fa-gray-900: #0F172A;
+  --fa-red: #EF4444;
+  --fa-orange: #F97316;
+  --fa-blue: #3B82F6;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: 'Sora', sans-serif; background: var(--fa-gray-50); color: var(--fa-gray-800); -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+button { font-family: 'Sora', sans-serif; cursor: pointer; }
+input, select, textarea { font-family: 'Sora', sans-serif; }
+input:focus, select:focus, textarea:focus { outline: none; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--fa-gray-200); border-radius: 99px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse { 0%,100% { opacity:.4; transform:scale(.8); } 50% { opacity:1; transform:scale(1); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes slideIn { from { opacity:0; transform:translateX(20px); } to { opacity:1; transform:translateX(0); } }
+
+.animate-fadeUp { animation: fadeUp .5s ease forwards; }
+.animate-fadeIn { animation: fadeIn .4s ease forwards; }
+.animate-slideIn { animation: slideIn .4s ease forwards; }
